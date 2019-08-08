@@ -38,4 +38,6 @@ user
   .then(() => {
     console.log(user);
   })
-  .catch(e => {console.log('Hey Error', e);});
+  .catch(e => {
+    console.log('Hey Error', e);
+  });
