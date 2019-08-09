@@ -32,7 +32,7 @@
     }
   },
   "lint-staged": {
-    "*.{js}": [
+    "*.{js,ts,scss,html}": [
       "sudo npm run lint",
       "git add"
     ]
