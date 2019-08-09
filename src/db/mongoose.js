@@ -35,7 +35,7 @@ const user = new User({
 user
   .save()
   .then(() => {
-    console.log(user);
+    console.log(user); 
   })
   .catch(e => {console.log('Hey Error', e)   ;
   });
