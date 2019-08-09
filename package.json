@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --fix . && echo 'Lint complete.'",
-    "precommit": "npm run lint && git add ."
+    "precommit": "lint-staged"
   },
   "keywords": [],
   "author": "",
@@ -26,5 +26,16 @@
     "jest": "^24.8.0",
     "lint-staged": "^9.2.1",
     "prettier": "^1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,scss,html}": [
+      "npm run lint",
+      "git add"
+    ]
   }
 }
