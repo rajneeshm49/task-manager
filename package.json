@@ -32,8 +32,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,scss,html}": [
-      "sudo npm run lint",
+    "*.js": [
+      "./node_modules/.bin/eslint — fix",
       "git add"
     ]
   }
