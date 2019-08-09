@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --fix . && echo 'Lint complete.'",
-    "precommit": "lint-staged"
+    "lint": "eslint --fix . && echo 'Lint complete.'"
   },
   "keywords": [],
   "author": "",
