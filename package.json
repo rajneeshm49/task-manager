@@ -32,8 +32,8 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "./node_modules/.bin/eslint — fix",
+    "*.{js,ts,scss,html}": [
+      "npm run lint",
       "git add"
     ]
   }
