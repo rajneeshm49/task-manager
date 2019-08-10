@@ -12,7 +12,7 @@ app.post('/users', (req, res) => {
   user
     .save()
     .then(() => {
-      res.send(user).status(201);
+      res.status(201).send(user);
     })
     .catch(e => {
       res.status(400).send(e);
